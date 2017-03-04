@@ -1,4 +1,14 @@
 languageCode = "en-us"
 title = "何枝可依"
 baseurl = "http://tech.crandom.com:9022/"
-theme = "hugo-theme-cactus-plus"
+theme = "hugo-theme-slim"
+
+[params]
+  Subtitle = "Life is short, I use python. Winter is comming, Let's go!"
+  GithubID = "hyacinthus"
+  # AnalyticsID = "Your Google Analytics tracking code"
+  # DisqusShortname = "Your Disqus shortname"
+  Summary = false # takes true or false
+  Content = false  # takes true or false
+  # if both are set to true, summary is shown.
+  FooterMsg = "Copyright Muninn 2017. Powered by Hugo."
