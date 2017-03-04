@@ -1,3 +1,4 @@
 languageCode = "en-us"
-title = "My New Hugo Site"
-baseurl = "http://example.org/"
+title = "何枝可依"
+baseurl = "http://tech.crandom.com:9022/"
+theme = "hugo-theme-cactus-plus"

@@ -1,10 +1,12 @@
-+++
-date = "2017-03-04T00:14:01+08:00"
-title = "about"
-draft = false
+---
+title: About
+author: muninn
+type: page
+date: 2012-11-03T09:56:05+00:00
+duoshuo_thread_id:
+  - 1184800744742584324
 
-+++
-
+---
 我是一个沉默的人  
 无论在现实还是网络  
 总是去倾听 去阅读 却很少说什么  
