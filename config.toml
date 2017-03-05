@@ -1,6 +1,6 @@
 languageCode = "en-us"
 title = "何枝可依"
-baseurl = "https://crandom.com"
+baseurl = "https://crandom.com/"
 theme = "hugo-theme-slim"
 
 [params]
