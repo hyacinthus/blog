@@ -2,7 +2,7 @@
 title: Oracle 11g中慎用exp和imp
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-06-15T00:00:00+00:00
 url: /2011/06/15/oracle_expdp.html
 duoshuo_thread_id:
   - 1184800744742584360

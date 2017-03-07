@@ -2,7 +2,7 @@
 title: oracle的long数据类型
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-04-01T00:00:00+00:00
 url: /2011/04/01/oracle_long.html
 duoshuo_thread_id:
   - 1184800744742584352

@@ -2,7 +2,7 @@
 title: Oracle转义字符
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-06-21T00:00:00+00:00
 url: /2011/06/21/oracle_escape.html
 duoshuo_thread_id:
   - 1184800744742584361

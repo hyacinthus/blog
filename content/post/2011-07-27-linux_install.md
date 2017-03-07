@@ -2,7 +2,7 @@
 title: 光驱坏了怎么装linux
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-07-27T00:00:00+00:00
 url: /2011/07/27/linux_install.html
 duoshuo_thread_id:
   - 1184800744742584366

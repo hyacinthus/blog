@@ -2,7 +2,7 @@
 title: Oracle删除有数据的用户
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-03-18T00:00:00+00:00
 url: /2011/03/18/oracle_drop_user.html
 duoshuo_thread_id:
   - 1184800744742584350

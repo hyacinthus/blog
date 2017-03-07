@@ -2,7 +2,7 @@
 title: 转出域名记
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-07-07T00:00:00+00:00
 url: /2011/07/07/transfer_domain.html
 duoshuo_thread_id:
   - 1184800744742584364

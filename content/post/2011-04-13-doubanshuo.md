@@ -2,7 +2,7 @@
 title: 豆瓣也开微博了
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-04-13T00:00:00+00:00
 url: /2011/04/13/doubanshuo.html
 duoshuo_thread_id:
   - 1184800744742584355

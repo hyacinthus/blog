@@ -2,7 +2,7 @@
 title: 软件的关闭按钮
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-03-11T00:00:00+00:00
 url: /2011/03/11/tongzhilan.html
 duoshuo_thread_id:
   - 1184800744742584347

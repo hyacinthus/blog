@@ -2,7 +2,7 @@
 title: blogger导入wordpress后恢复permalink
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2011-06-24T00:00:00+00:00
 url: /2011/06/24/blogger导入wordpress后恢复permalink.html
 duoshuo_thread_id:
   - 1184800744742584362
@@ -41,18 +41,18 @@ blogger导入wordpress官方就提供有插件
 
 <pre class="brush: php;">&lt;?php
 require_once('wp-load.php');
- 
+
 $res = $wpdb-&gt;get_results("SELECT post_id, meta_value FROM $wpdb-&gt;postmeta WHERE meta_key = 'blogger_permalink'");
 $wpdb-&gt;print_error();
- 
+
 foreach ($res as $row){
 $slug = explode("/",$row-&gt;meta_value);
 $slug = explode(".",$slug[3]);
- 
+
 $wpdb-&gt;query("UPDATE $wpdb-&gt;posts SET post_name ='" . $slug[0] . "' WHERE ID = $row-&gt;post_id");
 $wpdb-&gt;print_error();
 }
- 
+
 echo "DONE";
 ?&gt;</pre>
 
