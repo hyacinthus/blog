@@ -2,7 +2,7 @@
 title: usermod修改用户群组的问题
 author: muninn
 type: post
-date: -001-11-30T00:00:00+00:00
+date: 2010-12-09T00:00:00+00:00
 url: /2010/12/09/linux_group.html
 duoshuo_thread_id:
   - 1184800744742584336
