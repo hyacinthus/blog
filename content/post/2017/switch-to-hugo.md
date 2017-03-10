@@ -11,6 +11,10 @@ draft = true
 
 自己买了域名绑定上去，后来被墙了，又研究了反向代理。
 
+感谢gfw让我第一时间就接触了nginx，远在它流行之前。
+
+<br>
+
 后来 GAE 刚出来，很为 google 的云计算平台激动。
 
 我找了个叫[microlog](https://github.com/xuming/micolog)的部署在GAE的博客。
