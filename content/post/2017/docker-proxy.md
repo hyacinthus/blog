@@ -3,7 +3,7 @@
 date = "2017-03-10T20:30:13+08:00"
 title = "为 Docker 设置代理"
 tags = ["docker","gfw","systemd"]
-draft = true
+comments = true
 
 +++
 
@@ -16,14 +16,14 @@ draft = true
 
 本文假设：
 * 你已经有一个http代理了
-* Linux发行版使用的是systemd
+* Linux发行版的服务管理器使用的是systemd
 * 本文写于 Version 17.03.0-ce , 在 Docker 1.13 和 17.03 上是可以的，不排除将来有所改变
 
 顺带说一句，Windows版的在 Settings 的图形界面上直接可以设置代理。
 
 ## 关于systemd
 
-很多人可能对systemd还不熟悉，但主流发行版已经全都切换成systemd了，还是得了解一下。
+很多人可能对systemd还不熟悉，但主流发行版已经全都切换成systemd了，还是很有必要了解一下。
 ```bash
 # 重启docker
 $ sudo systemctl restart docker
@@ -33,95 +33,57 @@ $ sudo service docker restart
 $ sudo systemctl enable docker
 ```
 
-`systemd`是由一个在`/lib/systemd/system/docker.service`
-The recommended way is to use a systemd drop-in file documentation). These are local files named `<something>.conf` in the
-`/etc/systemd/system/docker.service.d` directory.
+`systemd`是由文件夹`/lib/systemd/system`中的`docker.service`文件定义的。
+我们随便搜索一下systemd教程，就知道怎么样自己编写一个service文件了。
+于是你可能跃跃欲试，把这个文件改一改，代理加进去就好了嘛。
 
-However, if you had previously used a package which had an `EnvironmentFile`
-(often pointing to `/etc/sysconfig/docker`) then for backwards compatibility,
-you drop a file with a `.conf` extension into the
-`/etc/systemd/system/docker.service.d` directory including the following:
+等等，不要着急，如果你自己在做一个自己的服务，当然是要自己直接写这个文件了。但是，我们的docker是从官方源安装的。
+这意味着你现在改了这个文件虽然会生效，但是docker一升级，这个文件又被覆盖了呢。针对这个问题，systemd当然也有解决方案。
 
-```conf
-[Service]
-EnvironmentFile=-/etc/sysconfig/docker
-EnvironmentFile=-/etc/sysconfig/docker-storage
-EnvironmentFile=-/etc/sysconfig/docker-network
-ExecStart=
-ExecStart=/usr/bin/dockerd $OPTIONS \
-          $DOCKER_STORAGE_OPTIONS \
-          $DOCKER_NETWORK_OPTIONS \
-          $BLOCK_REGISTRY \
-          $INSECURE_REGISTRY
-```
+你其实只需要创造一个叫 `<something>.conf` 的配置文件，名字随便起，放在
+`/etc/systemd/system/docker.service.d` 目录。你就覆盖了默认的启动配置，并且它会作为你的用户配置一直存在。
 
-To check if the `docker.service` uses an `EnvironmentFile`:
-
-```bash
-$ systemctl show docker | grep EnvironmentFile
-
-EnvironmentFile=-/etc/sysconfig/docker (ignore_errors=yes)
-```
-
-Alternatively, find out where the service file is located:
-
-```bash
-$ systemctl show --property=FragmentPath docker
-
-FragmentPath=/usr/lib/systemd/system/docker.service
-
-$ grep EnvironmentFile /usr/lib/systemd/system/docker.service
-
-EnvironmentFile=-/etc/sysconfig/docker
-```
-
-You can customize the Docker daemon options using override files as explained in
-the [HTTP Proxy example](systemd.md#http-proxy) below. The files located in
-`/usr/lib/systemd/system` or `/lib/systemd/system` contain the default options
-and should not be edited.
 
 ### HTTP proxy
 
-This example overrides the default `docker.service` file.
+好了，现在我们可以开始加代理配置了。
 
-If you are behind an HTTP proxy server, for example in corporate settings,
-you will need to add this configuration in the Docker systemd service file.
-
-1.  Create a systemd drop-in directory for the docker service:
+1.  默认情况下这个配置文件夹并不存在，我们要创建它。
 
     ```bash
     $ mkdir -p /etc/systemd/system/docker.service.d
     ```
 
-2.  Create a file called `/etc/systemd/system/docker.service.d/http-proxy.conf`
-    that adds the `HTTP_PROXY` environment variable:
+2.  创建一个文件 `/etc/systemd/system/docker.service.d/http-proxy.conf`
+    包含 `HTTP_PROXY` 环境变量:
 
     ```conf
     [Service]
     Environment="HTTP_PROXY=http://proxy.example.com:80/"
     ```
 
-3.  If you have internal Docker registries that you need to contact without
-    proxying you can specify them via the `NO_PROXY` environment variable:
+3.  如果有局域网或者国内的registry，我们还需要使用 `NO_PROXY` 变量声明一下，比如你可以能国内的daocloud.io放有镜像:
 
     ```conf
-    Environment="HTTP_PROXY=http://proxy.example.com:80/" "NO_PROXY=localhost,127.0.0.1,docker-registry.somecorporation.com"
+    Environment="HTTP_PROXY=http://proxy.example.com:80/" "NO_PROXY=localhost,127.0.0.1,daocloud.io"
     ```
 
-4.  Flush changes:
+4.  刷新systemd配置:
 
     ```bash
     $ sudo systemctl daemon-reload
     ```
 
-5.  Verify that the configuration has been loaded:
+5.  用系统命令验证环境变量加上去没:
 
     ```bash
     $ systemctl show --property=Environment docker
     Environment=HTTP_PROXY=http://proxy.example.com:80/
     ```
-6.  Restart Docker:
+6.  万事俱备，重启docker，在外面的世界遨游吧:
 
     ```bash
     $ sudo systemctl restart docker
     ```
+
+ps. 本文只是对官方文档的翻译和简化，希望大家还是学会活用google，检索官方文档，比看博客更有时效性。
