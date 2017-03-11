@@ -15,6 +15,7 @@ comments = true
 于是，你还是需要一个代理。
 
 本文假设：
+
 * 你已经有一个http代理了
 * Linux发行版的服务管理器使用的是systemd
 * 本文写于 Version 17.03.0-ce , 在 Docker 1.13 和 17.03 上是可以的，不排除将来有所改变
@@ -24,6 +25,7 @@ comments = true
 ## 关于systemd
 
 很多人可能对systemd还不熟悉，但主流发行版已经全都切换成systemd了，还是很有必要了解一下。
+
 ```bash
 # 重启docker
 $ sudo systemctl restart docker
@@ -65,6 +67,7 @@ $ sudo systemctl enable docker
 3.  如果有局域网或者国内的registry，我们还需要使用 `NO_PROXY` 变量声明一下，比如你可以能国内的daocloud.io放有镜像:
 
     ```conf
+    [Service]
     Environment="HTTP_PROXY=http://proxy.example.com:80/" "NO_PROXY=localhost,127.0.0.1,daocloud.io"
     ```
 
