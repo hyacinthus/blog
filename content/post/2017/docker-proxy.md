@@ -3,7 +3,6 @@
 date = "2017-03-10T20:30:13+08:00"
 title = "为 Docker 设置代理"
 tags = ["docker","gfw","systemd"]
-comments = true
 
 +++
 

@@ -2,7 +2,6 @@
 date = "2017-03-09T20:30:13+08:00"
 title = "switch to hugo"
 tags = ["talk","hugo","wordpress","caddy"]
-comments = true
 
 +++
 
