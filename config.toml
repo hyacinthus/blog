@@ -1,14 +1,41 @@
 languageCode = "en-us"
 title = "何枝可依"
-baseurl = "https://tech.crandom.com/"
-theme = "hugo-theme-slim"
+baseurl = "https://tech.crandom.com"
+theme = "hucore"
+#disqusShortname = "crandom"
+copyright = "&copy; 2017 | Powered by <a href=\"http://gohugo.io\" target=\"_blank\">Hugo</a> ♥"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
 
 [params]
-  Subtitle = "Life is short, I use python. Winter is comming, Let's go!"
-  GithubID = "hyacinthus"
-  # AnalyticsID = "Your Google Analytics tracking code"
-  DisqusShortname = "crandom"
-  Summary = false # takes true or false
-  Content = false  # takes true or false
-  # if both are set to true, summary is shown.
-  FooterMsg = "Copyright Muninn 2017. Powered by Hugo."
+description = "Life is short, I use python. Winter is comming, Let's go!"
+keywords = ["docker", "golang", "microservice"]
+author = "Muninn"
+sharingicons = true
+
+[params.highlight]
+style = "github"
+languages = ["go", "dockerfile", "python", "shell"]
+
+[[params.social]]
+url = "https://github.com/hyacinthus"
+fa_icon = "fa-github"
+
+[[params.social]]
+url = "https://xiafeng.net"
+fa_icon = "fa-times"
+
+[[params.social]]
+url = "https://zhuanlan.zhihu.com/docker"
+fa_icon = "fa-quora"
+
+[[params.social]]
+url = "https://www.linkedin.com/in/瑞华-王-39422039/"
+fa_icon = "fa-linkedin-square"
+
+[[params.social]]
+url = "/index.xml"
+fa_icon = "fa-rss"
+
