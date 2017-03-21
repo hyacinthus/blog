@@ -4,6 +4,7 @@ baseurl = "https://tech.crandom.com"
 theme = "hucore"
 #disqusShortname = "crandom"
 copyright = "&copy; 2017 | Powered by <a href=\"http://gohugo.io\" target=\"_blank\">Hugo</a> ♥"
+hasCJKLanguage = true
 
 [taxonomies]
 tag = "tags"

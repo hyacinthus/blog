@@ -1,6 +1,3 @@
 [submodule "themes/hugo-theme-slim"]
 	path = themes/hugo-theme-slim
 	url = https://github.com/hyacinthus/hugo-theme-slim.git
-[submodule "themes/hucore"]
-	path = themes/hucore
-	url = https://github.com/mgjohansen/hucore.git
