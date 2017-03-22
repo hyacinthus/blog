@@ -18,7 +18,7 @@ sharingicons = true
 
 [params.highlight]
 style = "github"
-languages = ["go", "dockerfile", "python", "shell"]
+languages = ["go", "dockerfile", "python", "bash"]
 
 [[params.social]]
 url = "https://github.com/hyacinthus"
