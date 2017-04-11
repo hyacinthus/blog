@@ -40,9 +40,10 @@ STATUS 400 Bad Request
 }
 ```
 传统的错误响应可能只有一个伴随 HTTP Status code 的 string 类型的 message，
-如今我们把正常的响应格式编程了 JSON ，那么把错误返回也用 JSON 吧。
-除了用 JSON 之外，我们又增加了一个 error 字段，这个字段是一个比 Status code 要
-详细一个级别的 Key，消费端可以用这个约定的 Key 做更为灵活的错误处理。
+如今我们把正常的响应格式变成了 JSON ，那么把错误返回也用 JSON 吧。
+除了用 JSON 之外，我们又增加了一个 error 字段，
+这个字段是一个比 Status code 要详细一个级别的 Key，
+消费端可以用这个约定的 Key 做更为灵活的错误处理。
 
 好了，我们就用这个简单的例子进行下去，今天主题讲的是 Echo 去统一处理的方法。
 
@@ -69,7 +70,7 @@ type Echo struct {
     // contains filtered or unexported fields
 }
 ```
-果然可以定义 **HTTPErrorHandler** 顺着找过去，
+果然可以定义 **HTTPErrorHandler**, 顺着找过去，
 ```golang
 // HTTPErrorHandler is a centralized HTTP error handler.
 type HTTPErrorHandler func(error, Context)
@@ -101,12 +102,13 @@ func (e *httpError) Error() string {
 }
 ```
 这里我们做了三件事
+
 1. 定义了错误的结构，其中包含 code，key 和 message，key 和 message 可以被导出为 JSON。
 2. 做了个新建错误结构的函数，这样就可以用一行代码去新建一个错误了。
 3. 给这个结构增加了 `Error` 函数，这样这个结构就成了一个 golang 的 error 接口。
 
 ## 处理错误
-我们终于可以写上文提到的自定义函数了，先看一个示例我再做解释，然后你就能写自己的了：
+我们终于可以写上文提到的自定义函数了，先看示例代码我再做解释，然后你就能写自己的了：
 ```golang
 package main
 
@@ -149,7 +151,7 @@ func httpErrorHandler(err error, c echo.Context) {
     }
 }
 ```
-这个函数的功能就是根据传进来的 error 和已经有个的 Context，组装出合适的 HTTP 响应。
+这个函数的功能就是根据传进来的 error 和上下文 Context，组装出合适的 HTTP 响应。
 可因为 golang 的 error 是一个接口，也就是第一个参数可能传进来任何奇怪的东西，
 我们需要细心的处理一下。
 
@@ -162,10 +164,10 @@ func httpErrorHandler(err error, c echo.Context) {
 
 第三部分你可以基本照抄，是检查上下文中是否声明这个响应已经提交了，只有没提交的时候，
 我们才需要把我们准备好的错误信息以 JSON 格式提交，顺便打印错误日志。另外，如果请求
-是 HEAD 方法的话，根据规范，你只能返回状态 204 并默默打印错误了。
+是 HEAD 方法的话，根据规范，你只能返回状态 204 并默默在日志记录错误了。
 
 ## 应用
-好了，我们写好了统一的错误处理，改怎么使用呢？ 来看一个极简的例子吧：
+好了，我们写好了统一的错误处理，该怎么使用呢？ 来看一个极简的例子吧：
 ```golang
 func getUser(c echo.Context) error {
     var u user
@@ -184,13 +186,14 @@ func getUser(c echo.Context) error {
 }
 ```
 这是个从 mongodb 取 user 的例子，
+
 1. 检查url中的id是不是一个合法的id，不是的话，返回我们之前自定义的错误。
 2. 去数据库里查，如果没有记录，返回 404 错误。
 3. 如果查询数据库的操作出了其他错误，这个时候我们无能为力了，只好直接把这个错误返回。
 4. 一切正常没错误的话，我们返回状态 200 和 JSON 数据。
 
 我们可以看出，经过这么一番折腾，在写API的时候，省心了很多。
-我们可以随手用一行代码构造错误，也可以直接把任何预测不到的错误直接返回，不用再麻烦的
-每次去构造 500 错误了。
+我们可以随手用一行代码构造错误，也可以直接把任何预测不到的错误返回，
+不用再麻烦的每次去构造 500 错误了。
 
 怎么样？快去安利小伙伴们用 echo 写 HTTP API 吧，真的很方便。
