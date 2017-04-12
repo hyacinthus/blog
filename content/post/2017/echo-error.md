@@ -130,6 +130,10 @@ func httpErrorHandler(err error, c echo.Context) {
         code = he.code
         key = he.Key
         msg = he.Message
+    } else if ee, ok := err.(*echo.HTTPError); ok {
+        code = ee.Code
+        key = http.StatusText(code)
+        msg = key
     } else if config.Debug {
         msg = err.Error()
     } else {
@@ -159,7 +163,8 @@ func httpErrorHandler(err error, c echo.Context) {
 说明你要被扣奖金了，除非你可以甩锅给你依赖的模块或基础设施。
 
 第二部分我们先看看传进来的错误是不是我们之前定义的，如果是那就太好了。如果不是的话，
-看来是一个其他的未知错误，如果 Debug 开着，那还好，不用扣奖金，我们把错误明细直接返回
+有可能是 Echo 返回的错误，比如路由或者方法没有找到之类的。如果还不是，
+看来是一个其他的未知错误，要是 Debug 开着，那还好，不用扣奖金，我们把错误明细直接输出
 到 msg 里方便调试。如果也没开 Debug ... 那只好硬着头皮返回 500 并什么信息都不给了。
 
 第三部分你可以基本照抄，是检查上下文中是否声明这个响应已经提交了，只有没提交的时候，
