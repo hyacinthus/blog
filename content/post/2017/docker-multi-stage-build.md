@@ -1,6 +1,6 @@
 +++
 date = "2017-04-14T13:12:49+08:00"
-title = "重要更新: Docker 原生支持多阶段构建(multi-stage build)"
+title = "Docker 重要更新: 原生支持多阶段构建(multi-stage build)"
 tags = ["microservice","golang","docker"]
 draft = false
 
@@ -15,15 +15,15 @@ Docker 的口号是 Build, Ship, and Run Any App, Anywhere.
 ## 传统做法
 
 我们最终的目的是要将编译好的可执行文件复制到 `alpine` 这样的迷你镜像里，
-那么该怎么弄到编译好的文件呢？基于 Docker 的思想，我们肯定需要在一个镜像中编译，
-这样这个过程才是标准化的，再说，你在 Ubuntu 编译一个二进制在 alpine 也运行不了。
+那么该怎么弄到编译好的文件呢？基于 Docker 的思想，我们肯定需要在一个标准容器中编译，
+这样这个过程才是标准化的，再说，你在 Ubuntu 编译出一个二进制文件在 alpine 也运行不了。
 
-于是我们先需要准备一个编译用的镜像，一般是用语言的 alpine 基础镜像，
-并把编译项目额外需要的各种工具打包进去，比如 golang 目前没有官方的包管理，
+于是我们先需要准备一个编译用的自定义镜像。一般是用相应语言的 alpine 基础镜像，
+把编译项目额外需要的各种工具打包进去，比如 golang 目前没有官方的包管理，
 你就需要把你用的包管理工具装进去。
 
 然后我们需要在运行 container 时把主机的一个目录通过 -v 挂载到 container上，
-让它把编译的结果输出到这个挂载的文件夹，这样我们就在主机上拿到这个文件了。
+让它把编译的结果输出到这个挂载的目录，这样我们就在主机上拿到这个文件了。
 
 最后，我们用一个最小的 `alpine` 镜像，把二进制文件复制进去。
 可能你还需要设置一下时区之类的。
@@ -45,7 +45,7 @@ Docker 的口号是 Build, Ship, and Run Any App, Anywhere.
 在2017年5月3日即将发行的 `Docker 17.05.0-ce` 中，Docker 官方提供了简便的多阶段构建
 (multi-stage build) 方案。我用例子为大家介绍下：
 
-```yaml
+```dockerfile
 FROM muninn/glide:alpine AS build-env
 ADD . /go/src/app
 WORKDIR /go/src/app
@@ -61,10 +61,10 @@ CMD ["app-server"]
 ```
 
 首先，第一个 `FROM` 后边多了个 `AS` 关键字，可以给这个阶段起个名字。
-然后这个[镜像](https://github.com/hyacinthus/docker-glide/blob/master/Dockerfile.alpine)是官方
- golang:alpine 加上构建工具 glide ，我们只是照旧安装依赖， build 出一个二进制程序。
+我举例子这个[镜像](https://github.com/hyacinthus/docker-glide/blob/master/Dockerfile.alpine)是官方
+ golang:alpine 加上构建工具 glide ，我们照旧安装依赖， build 出一个二进制程序。
 
-然后，第二部分用了官方的 `alpine` 镜像，改变时区到中国，新特性提现在 `COPY` 关键字，
+然后，第二部分用了官方的 `alpine` 镜像，改变时区到中国，新特性体现在 `COPY` 关键字，
 它现在可以接受 `--from=` 这样的参数，从上个我们起名字的阶段复制文件过来。
 
 就这么简单，现在你只需要一个 Dockerfile 就什么都搞定了。
@@ -73,7 +73,7 @@ CMD ["app-server"]
 
 于是现在你可以把好几个项目的二进制文件构建在一个迷你镜像中发布了，继续举个栗子：
 
-```yaml
+```dockerfile
 from debian as build-essential
 arg APT_MIRROR
 run apt-get update
