@@ -5,7 +5,7 @@ tags = ["microservice","golang","docker"]
 draft = false
 
 +++
-![Docker + alpine](https://static.crandom.com/tech/alpine.png)
+![Docker + alpine](https://static.crandom.com/tech/alpine.jpg)
 Docker 的口号是 Build, Ship, and Run Any App, Anywhere.
 但是我们在应用过程中会遇到一个问题，我们在 build 的时候，把源码也 build 进去了。
 然后就继续把源码 Ship 出去吗？这可不行。所有的编译型语言都面临这个困扰。
