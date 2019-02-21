@@ -20,6 +20,7 @@ tags: ["restful","api","microservice"]
 
 ## 更简单的办法是参考大厂
 其实给项目定规范，最不靠谱的是自己拍脑袋，稍好一点的是去知乎或论坛问，更好一点的是去 google 搜，最简单的是直接去看大厂的产品或者规范啊。 API 本来就是个公开暴露的东西，还有比这更好找参考的吗？我们来看看：
+
 * [Google](https://cloud.google.com/apis/design/errors) 遵守规范
 * [Github](https://developer.github.com/v3/#client-errors) 遵守规范
 * [Microsoft](https://github.com/Microsoft/api-guidelines/blob/vNext/Guidelines.md#711-http-status-codes)  遵守规范 顺便说一句，微软的 API 规范真的很具有指导意义。
@@ -41,3 +42,6 @@ tags: ["restful","api","microservice"]
 这样错误分为了三层结构，第一层是 Status Code，使用者能大概知道是什么问题。第二层Error 是一个 Key 使用约定好的无空格的英文，给使用者做判断用，使用者可以根据 Key 自定义接下来的操作。第三层是 message ，有些 Key 使用者可以决定直接把 Message 显示个终端客户。
 
 如果是微服务项目，需要要求每个服务不管用什么语言，都要把错误统一成这个样子。如果开发者告诉你框架不支持，那这一定不是个好框架，改重构了。好的框架不仅能让你自定义错误内容，还能做到所谓的“框架自己出错的返回”也由你自定义。比如路由没有找到之类的。
+
+## 最后
+我实在不明白为什么一个最扯淡的答案，要自造一个 `600` 的 status code ，可以得票第一。知乎用户到底有没有一点独立的判断精神啊，只要装的一本正经，再摆出来一点资历，哪怕是胡说八道，大家也纷纷点赞。也许真的不适合在知乎去回答技术问题了。
