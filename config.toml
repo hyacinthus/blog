@@ -1,5 +1,5 @@
 languageCode = "en-us"
-title = "何枝可依"
+title = "Muninn"
 baseurl = "https://tech.crandom.com/"
 theme = "slim"
 
@@ -11,4 +11,4 @@ theme = "slim"
   Summary = false # takes true or false
   Content = false  # takes true or false
   # if both are set to true, summary is shown.
-  FooterMsg = "Copyright Muninn 2017. Powered by Hugo."
+  FooterMsg = "Copyright Muninn 2019. Powered by Hugo. 陕ICP备16007985号-2"
