@@ -1,6 +1,7 @@
 ---
-draft:true
-tags:
-- talk
-- golang
+title: "{{ replace .Name "-" " " | title }}"
+date: {{ .Date }}
+draft: true
+tags: []
+description: ""
 ---
