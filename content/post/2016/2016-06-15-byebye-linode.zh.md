@@ -1,12 +1,9 @@
 ---
 title: 弃用 Linode
-author: muninn
+author: Hyacinthus
 type: post
 date: 2016-06-15T15:52:09+00:00
 url: /2016/06/15/byebye-linode.html
-categories:
-  - 对比
-  - 赞扬
 tags:
   - cloud
   - linode

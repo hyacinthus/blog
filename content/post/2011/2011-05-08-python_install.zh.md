@@ -1,13 +1,11 @@
 ---
 title: 在Linux/unix系统上安装最新的python
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-05-08T00:00:00+00:00
 url: /2011/05/08/python_install.html
 duoshuo_thread_id:
   - 1184800744742584357
-categories:
-  - 未分类
 tags:
   - AIX
   - Linux

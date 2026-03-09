@@ -1,17 +1,15 @@
 ---
 title: 在 OS X Mavericks 中使 NTFS 可写
-author: muninn
+author: Hyacinthus
 type: post
 date: 2013-12-22T05:44:07+00:00
 url: /2013/12/22/在-os-x-mavericks-中使-ntfs-可写.html
 duoshuo_thread_id:
   - 1184800744742584412
-categories:
-  - 技术
 tags:
   - apple
   - homebrew
-  - MAC OS
+  - MACOS
 
 ---
 现在的移动硬盘甚至u盘一般都用NTFS文件系统了

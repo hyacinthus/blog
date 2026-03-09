@@ -1,13 +1,11 @@
 ---
 title: 抱歉 关于本博客的评论系统
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-10-08T07:40:47+00:00
 url: /2011/10/08/micolog_comment.html
 duoshuo_thread_id:
   - 1184800744742584374
-categories:
-  - 技术
 tags:
   - GAE
   - Micolog

@@ -1,6 +1,6 @@
 ---
 title: About
-author: muninn
+author: Hyacinthus
 type: page
 date: 2012-11-03T09:56:05+00:00
 duoshuo_thread_id:

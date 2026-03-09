@@ -1,13 +1,11 @@
 ---
 title: Oracle wait for a undo record 的解决
-author: muninn
+author: Hyacinthus
 type: post
 date: 2014-05-16T06:57:29+00:00
 url: /2014/05/16/oracle-wait-for-a-undo-record-的解决.html
 duoshuo_thread_id:
   - 1184800744742584418
-categories:
-  - 技术
 tags:
   - ORACLE
 

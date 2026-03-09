@@ -1,13 +1,11 @@
 ---
 title: 软件的关闭按钮
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-03-11T00:00:00+00:00
 url: /2011/03/11/tongzhilan.html
 duoshuo_thread_id:
   - 1184800744742584347
-categories:
-  - 未分类
 tags:
   - software
 

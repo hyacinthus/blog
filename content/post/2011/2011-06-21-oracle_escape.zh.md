@@ -1,13 +1,11 @@
 ---
 title: Oracle转义字符
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-06-21T00:00:00+00:00
 url: /2011/06/21/oracle_escape.html
 duoshuo_thread_id:
   - 1184800744742584361
-categories:
-  - 未分类
 tags:
   - ORACLE
 

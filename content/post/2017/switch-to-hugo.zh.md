@@ -1,9 +1,9 @@
-+++
-date = "2017-03-09T20:30:13+08:00"
-title = "switch to hugo"
-tags = ["talk","hugo","wordpress","caddy"]
-
-+++
+---
+date: '2017-03-09T20:30:13+08:00'
+title: 'switch to hugo'
+author: 'Hyacinthus'
+tags: ["talk","hugo","wordpress","caddy"]
+---
 
 我从04年开始写博客
 

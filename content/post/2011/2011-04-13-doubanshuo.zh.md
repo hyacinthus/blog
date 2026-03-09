@@ -1,13 +1,11 @@
 ---
 title: 豆瓣也开微博了
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-04-13T00:00:00+00:00
 url: /2011/04/13/doubanshuo.html
 duoshuo_thread_id:
   - 1184800744742584355
-categories:
-  - 未分类
 tags:
   - other
 

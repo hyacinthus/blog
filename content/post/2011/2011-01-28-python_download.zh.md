@@ -1,13 +1,11 @@
 ---
 title: python.org太可爱了
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-01-28T00:00:00+00:00
 url: /2011/01/28/python_download.html
 duoshuo_thread_id:
   - 1184800744742584342
-categories:
-  - 未分类
 tags:
   - python
 

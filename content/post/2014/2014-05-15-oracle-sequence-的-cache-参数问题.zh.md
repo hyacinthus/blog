@@ -1,13 +1,11 @@
 ---
 title: ORACLE SEQUENCE 的 CACHE 参数问题
-author: muninn
+author: Hyacinthus
 type: post
 date: 2014-05-15T09:56:16+00:00
 url: /2014/05/15/oracle-sequence-的-cache-参数问题.html
 duoshuo_thread_id:
   - 1184800744742584417
-categories:
-  - 技术
 tags:
   - ORACLE
 

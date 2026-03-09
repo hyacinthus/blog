@@ -1,10 +1,9 @@
-+++
-date = "2017-10-15T21:12:49+08:00"
-title = "使用 Caddy 制作前端 Docker 镜像"
-tags = ["microservice","javascript","docker","caddy"]
-draft = false
-
-+++
+---
+date: '2017-10-15T21:12:49+08:00'
+title: '使用 Caddy 制作前端 Docker 镜像'
+author: 'Hyacinthus'
+tags: ["microservice","javascript","docker","caddy"]
+---
 
 ## 简介
 

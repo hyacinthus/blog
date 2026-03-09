@@ -1,13 +1,11 @@
 ---
 title: wordpress被黑了
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-04-17T08:48:14+00:00
 url: /2012/04/17/wordpress_hacked.html
 duoshuo_thread_id:
   - 1184800744742584387
-categories:
-  - 鄙视
 tags:
   - google
   - wordpress

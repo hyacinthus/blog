@@ -1,13 +1,11 @@
 ---
 title: Debian6搭建pptp服务器好简单
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-02-01T07:47:06+00:00
 url: /2012/02/01/debian_pptpd.html
 duoshuo_thread_id:
   - 1184800744742584384
-categories:
-  - 技术
 tags:
   - Debian
   - Linux

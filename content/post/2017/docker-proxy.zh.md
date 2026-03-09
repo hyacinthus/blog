@@ -1,10 +1,9 @@
-
-+++
-date = "2017-03-10T20:30:13+08:00"
-title = "为 Docker 设置代理"
-tags = ["docker","gfw","systemd"]
-
-+++
+---
+date: '2017-03-10T20:30:13+08:00'
+title: '为 Docker 设置代理'
+author: Hyacinthus
+tags: ["docker","gfw","systemd"]
+---
 
 因为众所周知的原因，Docker在国内的使用举步维艰。于是，很多组织在国内提供了`mirror`或者叫`加速器`。
 甚至在1.13的release note中提到微软提供了官方的中国镜像，然后我并没有找到怎么启用，找到了再写。

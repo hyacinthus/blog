@@ -1,13 +1,11 @@
 ---
 title: 找回被迅雷摧残的下载文件夹
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-05-05T09:37:23+00:00
 url: /2012/05/05/windows7_downloads_folder.html
 duoshuo_thread_id:
   - 1184800744742584323
-categories:
-  - 鄙视
 tags:
   - windows
 

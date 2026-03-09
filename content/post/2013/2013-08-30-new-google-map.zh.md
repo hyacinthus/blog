@@ -1,13 +1,11 @@
 ---
 title: New Google Map
-author: muninn
+author: Hyacinthus
 type: post
 date: 2013-08-29T16:32:01+00:00
 url: /2013/08/30/new-google-map.html
 duoshuo_thread_id:
   - 1184800744742584399
-categories:
-  - 赞扬
 tags:
   - google
 

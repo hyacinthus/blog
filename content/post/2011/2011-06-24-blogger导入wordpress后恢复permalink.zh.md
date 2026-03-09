@@ -1,13 +1,11 @@
 ---
 title: blogger导入wordpress后恢复permalink
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-06-24T00:00:00+00:00
 url: /2011/06/24/blogger导入wordpress后恢复permalink.html
 duoshuo_thread_id:
   - 1184800744742584362
-categories:
-  - 未分类
 tags:
   - blogger
   - wordpress

@@ -1,13 +1,11 @@
 ---
 title: 修改Windows的用户目录
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-05-18T00:00:00+00:00
 url: /2011/05/18/windows_user_path.html
 duoshuo_thread_id:
   - 1184800744742584358
-categories:
-  - 未分类
 tags:
   - windows
 

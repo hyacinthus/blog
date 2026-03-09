@@ -1,13 +1,11 @@
 ---
 title: Google App Engine更新的1.4.0
-author: muninn
+author: Hyacinthus
 type: post
 date: 2010-12-03T00:00:00+00:00
 url: /2010/12/03/gae_update.html
 duoshuo_thread_id:
   - 1184800744742584334
-categories:
-  - 未分类
 tags:
   - GAE
   - news

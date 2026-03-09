@@ -1,13 +1,11 @@
 ---
 title: 制作一个U盘中的Fedora操作系统
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-11-20T08:57:48+00:00
 url: /2011/11/20/fedora_usb.html
 duoshuo_thread_id:
   - 1184800744742584376
-categories:
-  - 技术
 tags:
   - Fedora
   - Linux

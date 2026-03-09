@@ -1,13 +1,11 @@
 ---
 title: 果断抛弃PQmagic吧
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-11-26T04:19:35+00:00
 url: /2011/11/26/win7_pqmagic.html
 duoshuo_thread_id:
   - 1184800744742584379
-categories:
-  - 对比
 tags:
   - windows
 

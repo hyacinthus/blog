@@ -1,13 +1,11 @@
 ---
 title: 在 Windows 10 文件管理器右键启动 PowerShell
-author: muninn
+author: Hyacinthus
 type: post
 date: 2016-01-22T07:26:23+00:00
 url: /2016/01/22/在-windows-10-文件管理器右键启动-powershell.html
 duoshuo_thread_id:
   - 6242509840929784577
-categories:
-  - 技术
 tags:
   - windows
 

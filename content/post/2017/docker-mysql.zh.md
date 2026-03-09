@@ -1,10 +1,9 @@
-+++
-date = "2017-03-28T21:12:49+08:00"
-title = "在 Docker 中使用 mysql 的一些技巧"
-tags = ["mysql","docker"]
-draft = false
-
-+++
+---
+date: '2017-03-28T21:12:49+08:00'
+title: '在 Docker 中使用 mysql 的一些技巧'
+author: 'Hyacinthus'
+tags: ["mysql","docker"]
+---
 
 今天我写一点在 Docker 容器中使用 MYSQL 的 tips.
 要不要在生产环境使用 Docker 运行数据库这么深奥的问题，等我踩足够的坑再来写吧。

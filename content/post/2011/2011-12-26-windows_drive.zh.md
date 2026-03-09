@@ -1,13 +1,11 @@
 ---
 title: CMD下获得所有Windows盘符
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-12-26T07:00:02+00:00
 url: /2011/12/26/windows_drive.html
 duoshuo_thread_id:
   - 1184800744742584382
-categories:
-  - 技术
 tags:
   - windows
 

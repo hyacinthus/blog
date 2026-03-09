@@ -1,14 +1,11 @@
 ---
 title: Press the Enter key to begin the installation process
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-10-05T07:44:15+00:00
 url: /2011/10/05/fedora_install_usb.html
 duoshuo_thread_id:
   - 1184800744742584371
-categories:
-  - 技术
-  - 未分类
 tags:
   - Fedora
   - Linux

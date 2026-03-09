@@ -1,13 +1,11 @@
 ---
 title: SyntaxHighlighter在chrome中的问题
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-01-20T00:00:00+00:00
 url: /2011/01/20/syntaxhighlighter.html
 duoshuo_thread_id:
   - 1184800744742584340
-categories:
-  - 未分类
 tags:
   - other
 

@@ -1,13 +1,11 @@
 ---
 title: linode如何搬机房
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-02-13T05:55:33+00:00
 url: /2012/02/13/linode_move.html
 duoshuo_thread_id:
   - 1184800744742584386
-categories:
-  - 技术
 tags:
   - linode
 

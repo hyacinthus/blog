@@ -1,13 +1,11 @@
 ---
 title: Vim7.3的python3自动补全
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-05-05T09:03:53+00:00
 url: /2012/05/05/vim_python3_complete.html
 duoshuo_thread_id:
   - 1184800744742584394
-categories:
-  - 技术
 tags:
   - python
   - vim

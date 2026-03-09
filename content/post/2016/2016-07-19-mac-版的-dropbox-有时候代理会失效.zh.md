@@ -1,14 +1,12 @@
 ---
 title: Mac 版的 Dropbox 有时候代理会失效
-author: muninn
+author: Hyacinthus
 type: post
 date: 2016-07-19T02:00:56+00:00
 url: /2016/07/19/mac-版的-dropbox-有时候代理会失效.html
-categories:
-  - 技术
 tags:
   - dropbox
-  - MAC OS
+  - MACOS
 
 ---
 这个问题困扰我好久了

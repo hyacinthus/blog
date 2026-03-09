@@ -1,6 +1,7 @@
 ---
 date: 2019-02-03T15:27:09+08:00
 title: Should RESTful APIs Follow HTTP Status Code Standards?
+author: Hyacinthus
 tags: ["restful","api","microservice"]
 ---
 

@@ -1,14 +1,11 @@
 ---
 title: 奇艺的Andriod APP做的真烂
-author: muninn
+author: Hyacinthus
 type: post
 date: 2013-02-27T15:13:14+00:00
 url: /2013/02/27/奇艺的andriod-app做的真烂.html
 duoshuo_thread_id:
   - 1184800744742584398
-categories:
-  - 评测
-  - 鄙视
 tags:
   - Android
 

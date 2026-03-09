@@ -1,14 +1,11 @@
 ---
 title: 使用U盘安装Linux
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-10-02T03:14:08+00:00
 url: /2011/10/02/linux_usb_install.html
 duoshuo_thread_id:
   - 1184800744742584368
-categories:
-  - 技术
-  - 未分类
 tags:
   - Linux
 

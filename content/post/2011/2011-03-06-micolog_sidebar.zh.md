@@ -1,13 +1,11 @@
 ---
 title: 修改Micolog的侧边栏
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-03-06T00:00:00+00:00
 url: /2011/03/06/micolog_sidebar.html
 duoshuo_thread_id:
   - 1184800744742584346
-categories:
-  - 未分类
 tags:
   - GAE
   - Micolog

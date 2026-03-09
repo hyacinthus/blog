@@ -1,13 +1,11 @@
 ---
 title: DB2存储过程重载
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-11-03T23:37:33+00:00
 url: /2011/11/04/db2_procedure.html
 duoshuo_thread_id:
   - 1184800744742584378
-categories:
-  - 技术
 tags:
   - DB2
 

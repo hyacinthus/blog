@@ -1,13 +1,11 @@
 ---
 title: 三儿子的悲哀（Galaxy Nexus）
-author: muninn
+author: Hyacinthus
 type: post
 date: 2013-03-23T09:39:17+00:00
 url: /2013/03/23/三儿子的悲哀（galaxy-nexus）.html
 duoshuo_thread_id:
   - 1184800744742584397
-categories:
-  - 评测
 tags:
   - Android
   - google

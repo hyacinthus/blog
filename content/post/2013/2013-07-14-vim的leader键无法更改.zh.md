@@ -1,13 +1,11 @@
 ---
 title: Vim的leader键无法更改
-author: muninn
+author: Hyacinthus
 type: post
 date: 2013-07-14T11:23:31+00:00
 url: /2013/07/14/vim的leader键无法更改.html
 duoshuo_thread_id:
   - 1184800744742584406
-categories:
-  - 技术
 tags:
   - vim
 

@@ -1,13 +1,11 @@
 ---
 title: Windows 中交换 Control 键和 Caps Lock 键
-author: muninn
+author: Hyacinthus
 type: post
 date: 2013-07-16T08:09:42+00:00
 url: /2013/07/16/windows-中交换-control-键和-caps-lock-键.html
 duoshuo_thread_id:
   - 1184800744742584402
-categories:
-  - 技术
 tags:
   - windows
 

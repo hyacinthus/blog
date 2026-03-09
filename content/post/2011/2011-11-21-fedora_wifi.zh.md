@@ -1,13 +1,11 @@
 ---
 title: Fedora16自动安装无线网卡
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-11-21T08:06:30+00:00
 url: /2011/11/21/fedora_wifi.html
 duoshuo_thread_id:
   - 1184800744742584377
-categories:
-  - 技术
 tags:
   - Fedora
   - Linux

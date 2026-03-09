@@ -1,11 +1,9 @@
 ---
 title: 'locale: Cannot set LC_ALL to default locale'
-author: muninn
+author: Hyacinthus
 type: post
 date: 2016-06-07T02:02:20+00:00
 url: /2016/06/07/locale-cannot-set-lc_all-to-default-locale.html
-categories:
-  - 技术
 tags:
   - Linux
   - ubuntu

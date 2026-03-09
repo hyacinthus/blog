@@ -1,13 +1,11 @@
 ---
 title: Kindle Paperwhite
-author: muninn
+author: Hyacinthus
 type: post
 date: 2013-06-21T16:53:11+00:00
 url: /2013/06/22/kindle-paperwhite.html
 duoshuo_thread_id:
   - 1184800744742584408
-categories:
-  - 评测
 tags:
   - Kindle
 

@@ -1,13 +1,11 @@
 ---
 title: 我要投入Debian的怀抱啦
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-01-30T04:09:49+00:00
 url: /2012/01/30/debian_or_centos.html
 duoshuo_thread_id:
   - 1184800744742584383
-categories:
-  - 赞扬
 tags:
   - Debian
   - Linux

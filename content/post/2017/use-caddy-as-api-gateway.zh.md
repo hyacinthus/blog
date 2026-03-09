@@ -1,10 +1,9 @@
-+++
-date = "2017-03-16T21:12:49+08:00"
-title = "使用 caddy 作为微服务的 API gateway"
-tags = ["microservice","golang","api","caddy"]
-draft = false
-
-+++
+---
+date: '2017-03-16T21:12:49+08:00'
+title: '使用 caddy 作为微服务的 API gateway'
+author: 'Hyacinthus'
+tags: ["microservice","golang","api","caddy"]
+---
 
 ## 背景
 

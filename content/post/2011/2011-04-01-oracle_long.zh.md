@@ -1,13 +1,11 @@
 ---
 title: oracle的long数据类型
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-04-01T00:00:00+00:00
 url: /2011/04/01/oracle_long.html
 duoshuo_thread_id:
   - 1184800744742584352
-categories:
-  - 未分类
 tags:
   - ORACLE
 

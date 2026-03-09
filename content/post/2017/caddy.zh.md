@@ -1,9 +1,9 @@
-+++
-date = "2017-03-12T21:27:09+08:00"
-title = "新兴的web服务器caddy"
-tags = ["caddy","golang","webserver","wordpress"]
-
-+++
+---
+date: '2017-03-12T21:27:09+08:00'
+title: '新兴的web服务器caddy'
+author: 'Hyacinthus'
+tags: ["caddy","golang","webserver","wordpress"]
+---
 
 [caddy](https://caddyserver.com/) 是一个像 Apache, nginx, 或 lighttpd 的web服务器。
 你要问nginx已经很好了，为什么要用caddy呢? 我觉得caddy最大的特点是用起来简单，

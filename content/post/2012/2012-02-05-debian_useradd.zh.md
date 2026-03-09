@@ -1,13 +1,11 @@
 ---
 title: Debian6创建用户
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-02-05T07:56:23+00:00
 url: /2012/02/05/debian_useradd.html
 duoshuo_thread_id:
   - 1184800744742584385
-categories:
-  - 技术
 tags:
   - Debian
   - Linux

@@ -1,6 +1,7 @@
 ---
 date: 2019-02-26T19:26:30+08:00
 title: 用 Docker 无脑备份数据库
+author: Hyacinthus
 tags: ["db","mysql","docker"]
 ---
 

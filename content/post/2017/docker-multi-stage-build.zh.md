@@ -1,10 +1,9 @@
-+++
-date = "2017-04-14T13:12:49+08:00"
-title = "Docker 重要更新: 原生支持多阶段构建(multi-stage build)"
-tags = ["microservice","golang","docker"]
-draft = false
-
-+++
+---
+date: '2017-04-14T13:12:49+08:00'
+title: 'Docker 重要更新: 原生支持多阶段构建(multi-stage build)'
+author: 'Hyacinthus'
+tags: ["microservice","golang","docker"]
+---
 ![Docker + alpine](https://static.crandom.com/tech/alpine.jpg)
 Docker 的口号是 Build, Ship, and Run Any App, Anywhere.
 但是我们在应用过程中会遇到一个问题，我们在 build 的时候，把源码也 build 进去了。

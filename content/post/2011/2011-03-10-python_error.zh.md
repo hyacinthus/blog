@@ -1,13 +1,11 @@
 ---
 title: 程序起名要慎重
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-03-10T00:00:00+00:00
 url: /2011/03/10/python_error.html
 duoshuo_thread_id:
   - 1184800744742584345
-categories:
-  - 未分类
 tags:
   - python
 

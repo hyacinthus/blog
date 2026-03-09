@@ -1,13 +1,11 @@
 ---
 title: 设置Linux新建用户的默认Shell
-author: muninn
+author: Hyacinthus
 type: post
 date: 2015-01-15T09:10:03+00:00
 url: /2015/01/15/设置linux新建用户的默认shell.html
 duoshuo_thread_id:
   - 1184800744742584424
-categories:
-  - 技术
 tags:
   - Linux
 

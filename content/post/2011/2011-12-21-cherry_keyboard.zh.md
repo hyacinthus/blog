@@ -1,13 +1,11 @@
 ---
 title: 机械键盘注意防水
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-12-21T08:05:23+00:00
 url: /2011/12/21/cherry_keyboard.html
 duoshuo_thread_id:
   - 1184800744742584381
-categories:
-  - 评测
 tags:
   - keyboard
 

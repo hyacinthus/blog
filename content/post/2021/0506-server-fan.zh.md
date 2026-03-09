@@ -1,9 +1,9 @@
 ---
 title: 'Server饭-用API发微信通知或用微信控制你的服务器'
 date: 2021-05-06
-author: Muninn
+author: Hyacinthus
 slug: 'server-fan-intro'
-tags: ['golang','server.fan']
+tags: ['golang','serverfan']
 ---
 
 大家好，这是又一个向微信发通知的服务。这样的服务其实不少，一定是有新的特色我才好意思来介绍。

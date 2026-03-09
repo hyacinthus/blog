@@ -1,14 +1,11 @@
 ---
 title: 子网掩码的两种表示方法
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-07-27T06:05:08+00:00
 url: /2011/07/27/ziwangyanma.html
 duoshuo_thread_id:
   - 1184800744742584365
-categories:
-  - 技术
-  - 未分类
 tags:
   - internet
   - Linux

@@ -1,14 +1,11 @@
 ---
 title: 非Windows系统升级Dell笔记本BIOS
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-10-05T08:14:28+00:00
 url: /2011/10/05/update_bios.html
 duoshuo_thread_id:
   - 1184800744742584372
-categories:
-  - 技术
-  - 未分类
 tags:
   - Linux
   - windows

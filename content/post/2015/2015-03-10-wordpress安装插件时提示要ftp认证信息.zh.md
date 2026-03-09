@@ -1,13 +1,11 @@
 ---
 title: wordpress安装插件时提示要ftp认证信息
-author: muninn
+author: Hyacinthus
 type: post
 date: 2015-03-10T09:58:22+00:00
 url: /2015/03/10/wordpress安装插件时提示要ftp认证信息.html
 duoshuo_thread_id:
   - 1184800744742584426
-categories:
-  - 技术
 tags:
   - wordpress
 

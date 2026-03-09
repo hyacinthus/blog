@@ -1,13 +1,11 @@
 ---
 title: ORACLE中AS和IS的不同
-author: muninn
+author: Hyacinthus
 type: post
 date: 2010-11-30T00:00:00+00:00
 url: /2010/11/30/oracle_as_is.html
 duoshuo_thread_id:
   - 1184800744742584333
-categories:
-  - 未分类
 tags:
   - ORACLE
 

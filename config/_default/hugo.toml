@@ -1,3 +1,5 @@
+ignoreFiles = [".*/templates/.*"]
+ignoreLogs = ['warning-goldmark-raw-html']
 defaultContentLanguage = "zh"
 defaultContentLanguageInSubdir = false
 paginate = 10
@@ -29,7 +31,6 @@ paginate = 10
 [params.assets]
   disableHLJS = true
 
-ignoreLogs = ['warning-goldmark-raw-html']
 
 [markup]
   [markup.highlight]

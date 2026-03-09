@@ -1,13 +1,11 @@
 ---
 title: 转出域名记
-author: muninn
+author: Hyacinthus
 type: post
 date: 2011-07-07T00:00:00+00:00
 url: /2011/07/07/transfer_domain.html
 duoshuo_thread_id:
   - 1184800744742584364
-categories:
-  - 未分类
 tags:
   - domain
 

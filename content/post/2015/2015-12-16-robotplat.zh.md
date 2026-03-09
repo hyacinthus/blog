@@ -1,13 +1,11 @@
 ---
 title: 机器人资讯平台
-author: muninn
+author: Hyacinthus
 type: post
 date: 2015-12-16T14:49:18+00:00
 url: /2015/12/16/robotplat.html
 duoshuo_thread_id:
   - 6228893827214607105
-categories:
-  - 赞扬
 tags:
   - robot
 

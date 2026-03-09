@@ -1,13 +1,11 @@
 ---
 title: Chocolatey! 让Windows迎来新的时代
-author: muninn
+author: Hyacinthus
 type: post
 date: 2014-11-09T03:07:10+00:00
 url: /2014/11/09/chocolatey-让windows迎来新的时代.html
 duoshuo_thread_id:
   - 1184800744742584421
-categories:
-  - 技术
 tags:
   - windows
 

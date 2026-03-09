@@ -1,13 +1,11 @@
 ---
 title: 在vim中查看python文档
-author: muninn
+author: Hyacinthus
 type: post
 date: 2012-04-30T07:58:02+00:00
 url: /2012/04/30/pydoc_in_vim.html
 duoshuo_thread_id:
   - 1184800744742584391
-categories:
-  - 技术
 tags:
   - python
   - vim
