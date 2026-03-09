@@ -1,0 +1,113 @@
+defaultContentLanguage = "zh"
+defaultContentLanguageInSubdir = false
+paginate = 10
+
+[module]
+  [[module.imports]]
+    path = "github.com/adityatelange/hugo-PaperMod"
+
+[params]
+  env = "production"
+  author = "Muninn"
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowShareButtons = false
+  ShowToc = false
+  disqusShortname = "crandom"
+  defaultTheme = "auto"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/hyacinthus"
+
+  [[params.socialIcons]]
+    name = "x"
+    url = "https://x.com/summery"
+
+[params.assets]
+  disableHLJS = true
+
+ignoreLogs = ['warning-goldmark-raw-html']
+
+[markup]
+  [markup.highlight]
+    noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+[languages]
+  [languages.zh]
+    languageName = "中文"
+    weight = 1
+    title = "何枝可依"
+    languageCode = "zh-CN"
+    [languages.zh.params]
+      description = "The Blog of Hyacinthus"
+      [languages.zh.params.homeInfoParams]
+        Title = "你好，我是 Hyacinthus"
+        Content = "写了 20 多年代码<br>喜欢探索新东西<br>也曾研究 Python，也曾布道 Golang<br>现在在 Vibe Coding<br>这里是我的思考和分享"
+    [[languages.zh.menu.main]]
+      name = "首页"
+      url = "/"
+      weight = 1
+    [[languages.zh.menu.main]]
+      name = "索引"
+      url = "/archives/"
+      weight = 5
+    [[languages.zh.menu.main]]
+      name = "搜索"
+      url = "/search/"
+      weight = 10
+    [[languages.zh.menu.main]]
+      name = "标签"
+      url = "/tags/"
+      weight = 15
+    [[languages.zh.menu.main]]
+      name = "关于"
+      url = "/about/"
+      weight = 20
+    [[languages.zh.menu.main]]
+      name = "EN"
+      url = "https://blog.hack.fan/"
+      weight = 25
+
+  [languages.en]
+    languageName = "English"
+    weight = 2
+    title = "Fan of Hacking"
+    languageCode = "en"
+    [languages.en.params]
+      description = "The Blog of Hyacinthus"
+      [languages.en.params.homeInfoParams]
+        Title = "Hi, I'm Hyacinthus"
+        Content = "Coding since 2001.<br>Always curious, always exploring.<br>I've spent years tinkering with Python and spreading the word about Golang.<br>These days, I'm all about Vibe Coding.<br>Welcome to my digital garden of thoughts and shares."
+    [[languages.en.menu.main]]
+      name = "Home"
+      url = "/"
+      weight = 1
+    [[languages.en.menu.main]]
+      name = "Archive"
+      url = "/archives/"
+      weight = 5
+    [[languages.en.menu.main]]
+      name = "Search"
+      url = "/search/"
+      weight = 10
+    [[languages.en.menu.main]]
+      name = "Tags"
+      url = "/tags/"
+      weight = 15
+    [[languages.en.menu.main]]
+      name = "About"
+      url = "/about/"
+      weight = 20
+    [[languages.en.menu.main]]
+      name = "中文"
+      url = "https://tech.crandom.com/"
+      weight = 25

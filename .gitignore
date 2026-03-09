@@ -1,2 +1,6 @@
 /public
+/resources
+.hugo_build.lock
 .Archive
+.obsidian
+.DS_Store

@@ -1,0 +1,3 @@
+baseURL = "https://tech.crandom.com/"
+defaultContentLanguage = "zh"
+disableLanguages = ["en"]

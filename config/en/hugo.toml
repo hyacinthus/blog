@@ -1,0 +1,3 @@
+baseURL = "https://blog.hack.fan/"
+defaultContentLanguage = "en"
+disableLanguages = ["zh"]
