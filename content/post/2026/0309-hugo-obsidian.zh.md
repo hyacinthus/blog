@@ -20,3 +20,6 @@ draft: false
 最后，还是亲自出马吧，我研究了一下 hugo，发现 `ignoreFiles` 这个配置要放在 hugo.toml 的最前边，就是这么简单，这个 key 如果出现在某个 key 后边就失效了。这应该是 hugo 的一个 bug 吧。我搜索到了很多讨论，都没提到这一点。
 
 这是原始文档，很多人在 reddit 说这个配置是无效的： https://gohugo.io/configuration/all/#ignorefiles
+
+**后记：**
+我突然发现 claude, gemini, 和我都傻了。 toml 的语法里，其实是不看缩进的，也就是说 root key 必须放在第一个中括号之前。就这一个问题，claude 填错了位置，然后我们人和 AI 几轮都看不出来。看来 toml 确实式微啊。hugo 官方赶紧推荐 yaml 好了，别把例子都搞成 toml。

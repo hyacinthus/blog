@@ -20,3 +20,6 @@ In the past couple of months, AI has evolved to a frightening degree. With Claud
 In the end, I had to step in myself. After studying Hugo, I discovered that the `ignoreFiles` config must be placed at the very beginning of `hugo.toml`. It's that simple — if this key appears after certain other keys, it silently stops working. This is probably a bug in Hugo. I searched through many discussions, and none of them mentioned this.
 
 Here's the official documentation — many people on Reddit say this config doesn't work: https://gohugo.io/configuration/all/#ignorefiles
+
+**Postscript:**
+I suddenly realized that Claude, Gemini, and I were all being foolish. In TOML syntax, indentation doesn't actually matter — what matters is that root-level keys must be placed before the first bracket header. That was the whole problem: Claude put the key in the wrong position, and then none of us — human or AI — could spot it after multiple rounds. TOML really is falling out of favor. Hugo's team should hurry up and recommend YAML instead of making all their examples in TOML.
